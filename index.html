@@ -1,6 +1,6 @@
 <html class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr">
 <head>
-	<title>Untitled</title>
+	<title>Hi/Max Real Estate</title>
 	<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
 	<script
 		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/deps/jsonpointer.min.js"></script>
@@ -27,7 +27,7 @@
 
 <body>
 
-	<div> <!-- start of search-->
+	<div role="search" aria-label="Search section"> <!-- start of search-->
 		<div id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
 			<h2>Search</h2>
 
@@ -46,7 +46,7 @@
 
 		</div> <!--end of search-->
 	</div>
-	<div> <!-- start of header-->
+	<header role="banner" aria-label="Header section"> <!-- start of header-->
 
 		<div class="app-bar">
 			<div class="container">
@@ -59,6 +59,7 @@
 			</div>
 		</div>
 
+		<nav role="navigation" aria-label="Main navigation">
 		<div id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
 			class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
 			typeof="SiteNavigationElement">
@@ -81,11 +82,12 @@
 			</div>
 
 
-		</div> <!-- end of main navigation-->
+		</div>
+		</nav><!-- end of main navigation-->
 
-	</div> <!-- end of header-->
+	</   header> <!-- end of header-->
 
-	<main property="mainContentOfPage" class="container">
+	<main property="mainContentOfPage" role="main" aria-label="Main content" class="container">
 		<h1>Welcome</h1>
 		<p>Content A here</p>
 		<div class="row">
@@ -122,7 +124,7 @@
 
 
 	</main>
-	<div id="wb-info" class=" wb-navcurr-inited">
+	<footer role="contentinfo" aria-label="Footer section">
 		<div class="gc-sub-footer">
 			<div class="container d-flex align-items-center">
 				<div>
@@ -145,7 +147,7 @@
 
 			</div>
 		</div>
-	</div> <!-- end of footer-->
+	</footer> <!-- end of footer-->
 
 	<script>
 		var defFooter = document.getElementById("def-footer");
